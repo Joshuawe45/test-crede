@@ -42,16 +42,18 @@ body {
 
 .card.flip {
   --rotate-y: 180deg;
+
 }
 
 .card .front {
   left: 0;
 }
 
-.card .front,
-.card .back {
+.card .front{
+ text-align: center;
+ font-weight: bold;
+ font-size: 20px;
   position: absolute;
-  /* width: 100%; */
   padding: 1rem;
   backface-visibility: hidden;
 }
@@ -62,17 +64,14 @@ body {
 
 .flashcard-options {
   margin-top: .5rem;
-  width: 100%;
 }
 
 .flashcard-option {
-  width: 100%;
   margin-top: .25rem;
   color: #555;
   font-size: .75rem;
 }
 
 .flashcard-option:first-child {
-  width: 100%;
   margin-top: 0;
 }

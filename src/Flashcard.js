@@ -15,8 +15,8 @@ export default function Flascard({flashcard}) {
 {flashcard.question}
 <div className="box-logo">
 <img 
-width="70px"
-      src="https://voicefoundry.com/wp-content/uploads/2018/09/feature-aws.jpg"
+width="120px"
+      src={flashcard.logo}
       alt="new"
       />
 
@@ -26,7 +26,7 @@ width="70px"
             <div className="back">
             <div className="flashcard-options" >
           {flashcard.options.map(option => {
-            return <div className="flashcard-option" style={{'border': '1px solid black', padding: '5px'}}
+            return <div className="flashcard-option" 
             key={option}>{option}</div>
           })}
         </div></div>
